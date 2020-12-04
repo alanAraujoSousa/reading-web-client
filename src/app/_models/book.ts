@@ -1,6 +1,7 @@
 export class Book {
     id: number;
     title: string;
+    pages: number;
     startReadingDate: string;
     endReadingDate: string;
     currentPage: number;
@@ -8,4 +9,5 @@ export class Book {
     finalRating: number;
     reviewTitle: string;
     reviewContent: string;
+    year: string;
 }

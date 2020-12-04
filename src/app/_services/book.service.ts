@@ -16,10 +16,8 @@ export class BookService {
 
   constructor(private http: HttpClient) { }
 
-  register(book: Book): Observable<any> {
-    return this.http.post(API_URL, {
-      book
-    }, httpOptions);
+  register(book: any): Observable<any> {
+    return this.http.post(API_URL, book, httpOptions);
   }
 
   fetchOnGoogleBookAPI(title: string): Observable<any> {
