@@ -21,6 +21,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { PasswordModule } from 'primeng/password';
     HomeComponent,
     ProfileComponent,
     AddBookComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { PasswordModule } from 'primeng/password';
     InputTextModule,
     PasswordModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SplitButtonModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
