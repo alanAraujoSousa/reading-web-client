@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,6 +18,9 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { HeaderComponent } from './header/header.component';
 
 import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { PasswordModule } from 'primeng/password';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,11 @@ import { MenubarModule } from 'primeng/menubar';
     FormsModule,
     HttpClientModule,
     MenubarModule,
-    
+    ButtonModule,
+    InputTextModule,
+    PasswordModule,
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
