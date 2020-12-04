@@ -1,1 +1,48 @@
-<p>home works!</p>
+<div class="row">
+    <div class="col-3 offset-1">
+        <div class="d-flex justify-content-center">
+            <div id="user-profile-picture">
+            </div>
+        </div>
+
+        <div class="d-flex flex-column mt-4">
+            <strong >{{ user.name }}</strong>
+            <span >Recife, Brazil</span>
+        </div>
+        
+        <div id="user-counters" class="d-flex justify-content-between mt-4">
+            <div class="text-center">
+                <span>{{ user.reviewsCount }}</span>
+                <br>
+                <small>Resenhas</small>
+            </div>
+            <div class="text-center">
+                <span>{{ user.friendsCount }}</span>
+                <br>
+                <small>Amigos</small>
+            </div>
+            <div class="text-center">
+                <span>{{ user.booksCount }}</span>
+                <br>
+                <small>Livros</small>
+            </div>
+        </div>
+
+        <div class="d-flex mt-4 mb-4">
+            <button pButton type="button" class="form-control p-button-rounded p-button-warning" label="Adicionar livro" 
+            (click)="addBook()"></button>
+        </div>
+
+        <span class="mt-4"> Livros favoritos</span>
+        <div id="favorite-books">
+
+        </div>
+        
+    </div>
+    <div class="col-5">
+        oi
+    </div>
+    <div class="col-3">
+        oi
+    </div>
+</div>

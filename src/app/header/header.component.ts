@@ -29,6 +29,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('/signup');
   }
 
+  goToHome(): void {
+    this.router.navigateByUrl('/home');
+  }
+
   logout(): void {
     this.tokenStorageService.signOut();
     window.location.reload();

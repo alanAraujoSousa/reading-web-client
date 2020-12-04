@@ -1,14 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-lg navbar-light bg-white mb-4">
   <div class="col-3 offset-2">
-    <h4 id="app-name" class="main-color"><i class="fa fa-book" style="color: orange;"></i> READING.COM</h4>
+    <h4 id="app-name" class="main-color" (click)="goToHome()">
+      <i class="fa fa-book" style="color: orange;"></i> READING.COM
+    </h4>
   </div>
   <div *ngIf="isLoggedIn()" class="col-2">
     <!-- botoes meus livros, comunidade e novidades -->
   </div>
   <div *ngIf="isLoggedIn()" class="col-2 offset-1">
-    <button pButton type="button" icon="pi pi-bell" class="p-button-rounded p-button-text p-button-plain"></button>
-    <button pButton type="button" icon="pi pi-cog" class="p-button-rounded p-button-text p-button-plain"></button>
-    <button pButton type="button" icon="pi pi-info-circle" class="p-button-rounded p-button-text p-button-plain"></button>
-    <button (click)="logout()" pButton type="button" icon="pi pi-power-off" class="p-button-rounded p-button-text p-button-plain"></button>
+    <div class="row">
+      <div class="ml-auto">
+        <button pButton type="button" icon="pi pi-bell" class="p-button-rounded p-button-text p-button-plain"></button>
+        <button pButton type="button" icon="pi pi-cog" class="p-button-rounded p-button-text p-button-plain"></button>
+        <button pButton type="button" icon="pi pi-info-circle" class="p-button-rounded p-button-text p-button-plain"></button>
+        <button (click)="logout()" pButton type="button" icon="pi pi-power-off" class="p-button-rounded p-button-text p-button-plain"></button>
+      </div>
+    </div>
   </div>
 </nav>

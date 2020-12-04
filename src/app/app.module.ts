@@ -23,6 +23,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { FooterComponent } from './footer/footer.component';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { FooterComponent } from './footer/footer.component';
     PasswordModule,
     RouterModule,
     ReactiveFormsModule,
-    SplitButtonModule
+    SplitButtonModule,
+    BreadcrumbModule,
+    AutoCompleteModule,
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
